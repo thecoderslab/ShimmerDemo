@@ -25,7 +25,7 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-    String url = "https://api.themoviedb.org/3/movie/popular?api_key=87c9ba9c88100ec3893983bc2cd80181";
+    String url = "https://api.themoviedb.org/3/movie/popular?api_key=XXXXXXXXXXXXX";
     MovieModal mMovieItems;
     ArrayList<MovieModal> mArrayList = new ArrayList<>();
     MovieAdapter mAdapter;
@@ -53,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
                 mAdapter.notifyDataSetChanged();
                 mShimmerFrameLayout.setVisibility(View.VISIBLE);
 
+                //waits for 3 second before fetching data from url
+                //did this so you can see the simmer effect
                 Handler handler = new Handler();
                 handler.postDelayed(new Runnable() {
                     @Override
