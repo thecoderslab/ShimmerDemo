@@ -23,9 +23,11 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import static thecoderslab.com.shimmerdemo.BuildConfig.MY_MOVIE_DB_API_KEY;
+
 
 public class MainActivity extends AppCompatActivity {
-    String url = "https://api.themoviedb.org/3/movie/popular?api_key=XXXXXXXXXXXXX";
+    String url = "https://api.themoviedb.org/3/movie/popular?api_key=" + MY_MOVIE_DB_API_KEY;
     MovieModal mMovieItems;
     ArrayList<MovieModal> mArrayList = new ArrayList<>();
     MovieAdapter mAdapter;
