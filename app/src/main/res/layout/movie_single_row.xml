@@ -24,7 +24,6 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/textView_movie_genre"
             android:layout_alignStart="@+id/textView_movie_genre"
-            android:layout_alignTop="@+id/imageView_context_menu"
             android:text="Fight Club"
             android:textStyle="bold" />
 
@@ -38,7 +37,6 @@
             android:layout_marginLeft="122dp"
             android:layout_marginStart="122dp"
             android:text="Drama,Action" />
-
 
 
         <TextView
